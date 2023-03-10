@@ -12,8 +12,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cors())
 
-app.use('/api/todos', require('./routes/todoRoutes'))
-app.use('/api/user', require('./routes/userRoutes'))
+app.use('/api/todos', require('./api/todoRoutes'))
+app.use('/api/user', require('./api/userRoutes'))
 
 //  if (process.env.NODE_ENV === 'production') {
   // app.use(express.static(path.join(__dirname, '../frontend/build')))
